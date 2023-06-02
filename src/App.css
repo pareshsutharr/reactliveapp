@@ -1,0 +1,199 @@
+.App {
+  text-align: center;
+}
+.header {
+  background-color: #f2f2f2;
+  padding: 10px;
+  display: flex;
+  position: fixed;
+  top: 0;
+  z-index: 2;
+  left: 0;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.profile {
+  display: flex;
+  align-items: center;
+}
+
+.profile-picture {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.person-name {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.menu-icon {
+  cursor: pointer;
+  font-size: 25px;
+  margin-right: 20px;
+}
+
+.icon_extract {
+  display: none;
+  position: absolute;
+  right: 0px;
+  bottom: 80px;
+  font-size: 20px;
+  width: 100px;
+  padding: 10px;
+  border-radius: 2px;
+  letter-spacing: 10px;
+  background: whitesmoke;
+  border-radius: 10px;
+  margin-right: 20px;
+  flex-direction: row;
+}
+
+.popup-menu {
+  position: absolute;
+  top: 50px;
+  right: 10px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 10px;
+  display: none;
+  margin-right: 20px;
+}
+
+.popup-menu ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.popup-menu li {
+  margin-bottom: 10px;
+}
+
+.popup-menu li:last-child {
+  margin-bottom: 0;
+}
+
+.popup-menu a {
+  color: #333;
+  text-decoration: none;
+}
+
+/* Media Query for Mobile Devices */
+@media (max-width: 480px) {
+  .person-name {
+    font-size: 14px;
+  }
+}
+
+.footer {
+  background-color: #f2f2f2;
+  padding: 10px;
+  display: flex;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  bottom: 0px;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 400px;
+  width: 100%;
+}
+
+.message-input {
+  flex: 1;
+  height: 36px;
+  padding: 6px;
+  border: none;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+.icons {
+  display: flex;
+  margin-left: 10px;
+}
+
+.icon {
+  padding: 7px;
+}
+
+.send-icon,
+.link-icon {
+  color: #555;
+  font-size: 18px;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+/* Media Query for Mobile Devices */
+@media (max-width: 480px) {
+  .message-input {
+    height: 30px;
+    font-size: 12px;
+  }
+
+  .send-icon,
+  .link-icon {
+    font-size: 14px;
+  }
+}
+
+.chat_box{
+position: initial;
+top: 100px;
+margin-top: 80px;
+margin-bottom:300px;
+}
+
+.text-container{
+  display: flex;
+  padding: 10px;
+  width: 80%;
+}
+.text-container img{
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+}
+.text-box{
+  margin-left: 5px;
+  padding: 10px;
+  z-index: -1;
+  background: whitesmoke;
+  border-radius: 0px 15px 15px 15px;
+  box-shadow: 0px 1px rgba(128, 128, 128, 0.419);
+}
+
+.self-side-text{
+  float: right;
+}
+.self-side-box{
+  background: #1877f2;
+  color: white;
+  border-radius: 15px 0px 15px 15px;
+}
+.verified-icon{
+  color: #1877f2;
+  display: flex;
+  position: absolute;
+  font-size: 17px;
+  margin-top: 16px;
+  left: 29px;
+  background: white;
+  z-index: 0;
+  border-radius: 50%;
+}
